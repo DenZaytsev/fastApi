@@ -1,6 +1,9 @@
 on:
   push:
-    branches: [ master, '/^feature.*$/' ]
+    branches:
+      - master
+      - 'feature/*'
+
   pull_request:
     branches: [ master ]
 
@@ -33,4 +36,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest
+        pytest test
