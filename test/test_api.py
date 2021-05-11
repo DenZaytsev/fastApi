@@ -12,5 +12,3 @@ def test_first_view():
     assert response.json() == {"message": "TeSt"}
 
 
-def test_invalid_test():
-    assert False
