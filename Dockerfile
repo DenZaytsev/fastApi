@@ -13,6 +13,3 @@ RUN pip install -r requirements.txt
 
 # copy project
 COPY . .
-
-# start server
-RUN uvicorn app:fast_app
