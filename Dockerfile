@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # start server
-#RUN uvicorn app:fast_app
+RUN uvicorn app:fast_app
