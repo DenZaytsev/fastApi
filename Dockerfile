@@ -13,3 +13,5 @@ RUN pip install -r requirements.txt
 
 # copy project
 COPY . .
+
+CMD ["uvicorn app:fast_app"] 
